@@ -28,16 +28,8 @@ public class Conexao {
         
         } catch (SQLException e) {
            System.out.println("erro na conexao com a BD: "+ e);
-        } finally{
-            if (conn != null){
-                conn.close();
-            }
-        }
-
-        return conn;
+        } 
+          return conn;
     }
-    
-  
-
 
 }

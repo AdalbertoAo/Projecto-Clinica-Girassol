@@ -14,8 +14,7 @@ import java.time.LocalDate;
 public class Funcionario {
      // Atributos de um Funcionario
    private int id_funcionario;
-    private String nome, num_bilhete, telefone;
-    private char sexo;
+    private String nome, num_bilhete, telefone, sexo;
     private LocalDate data_nascimento, data_contratacao;
    private String endereco, cargo;
     private BigDecimal salario;
@@ -59,10 +58,10 @@ this.senha = senha;
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
     public LocalDate getData_contratacao() {
@@ -89,5 +88,6 @@ this.senha = senha;
     public void setSalario(BigDecimal salario) {
         this.salario = salario;
     }
+
 
 }

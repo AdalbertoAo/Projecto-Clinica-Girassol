@@ -3,19 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Paciente.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/test/teste.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/BD/DAO/MedicoDAO.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Especialidade.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Factura.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/BD/DAO/FuncionarioDAO.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/BD/DAO/EspecialidadeDAO.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/BD/Conexao.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Medico.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Medicamento.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/BD/DAO/PacienteDAO.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Telas/Dashboard1.java</file>
-            <file>file:/C:/Users/HP/Desktop/interface/Clinica%20Girassol%20Interface/src/Controladores/Funcionario.java</file>
+            <file>file:/C:/Users/HP/Desktop/interface/Projecto-Clinica-Girassol%20Git/Clinica%20Girassol%20Interface/src/Telas/Dashboard1.java</file>
+            <file>file:/C:/Users/HP/Desktop/interface/Projecto-Clinica-Girassol%20Git/Clinica%20Girassol%20Interface/src/BD/DAO/EspecialidadeDAO.java</file>
+            <file>file:/C:/Users/HP/Desktop/interface/Projecto-Clinica-Girassol%20Git/Clinica%20Girassol%20Interface/src/BD/INSER.java</file>
+            <file>file:/C:/Users/HP/Desktop/interface/Projecto-Clinica-Girassol%20Git/Clinica%20Girassol%20Interface/test/teste.java</file>
+            <file>file:/C:/Users/HP/Desktop/interface/Projecto-Clinica-Girassol%20Git/Clinica%20Girassol%20Interface/src/BD/Conexao.java</file>
         </group>
     </open-files>
 </project-private>

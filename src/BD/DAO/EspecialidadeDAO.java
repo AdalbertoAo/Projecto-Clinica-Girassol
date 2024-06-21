@@ -5,44 +5,49 @@
 package BD.DAO;
 
 import BD.*;
+import java.sql.PreparedStatement;
 import Controladores.Especialidade;
-import com.sun.jdi.connect.spi.Connection;
 import java.sql.*;
-import javax.swing.JOptionPane;
 
-/**
- *
- * @author HP
- */
-public class EspecialidadeDAO extends Conexao {
-    
-    public boolean cadastrarEspecialidade(Especialidade especialidade) throws SQLException, ClassNotFoundException{
-        Connection conn = (Connection) Conexao.getConexao();
+public class EspecialidadeDAO extends Especialidade{
 
-       
-  String sql = "INSERT INTO ESPECIALIDADE (NOME, DESCRICAO) VALUES (?,?)";
-         PreparedStatement obj = null;
-            try  {
-                obj = conn.preparedStatement(sql);
-                obj.setString(1, especialidade.getNome());
-                obj.setString(2, especialidade.getDescricao());
-                obj.execute();
-                obj.close();
+  public boolean cadasratrEspecialidade(Especialidade especialidade) throws ClassNotFoundException, SQLException{
+            String sql = "INSERT INTO ESPECIALIDADE (NOME, DESCRICAO) VALUES (?,?)";
+            Connection conn = Conexao.getConexao();
             
+            try(PreparedStatement obj = conn.prepareStatement(sql) ) {
+                
+                obj.setString(1, getNome());
+                obj.setString(2, getDescricao());
+                
+                obj.executeUpdate();
+                obj.close();
                 return true;
             } catch (SQLException ex) {
-                JOptionPane.showMessageDialog(null, "Erro ao cadastrar");
+                System.out.println("Erro ao escrever na BD: "+ex);
                 return false;
             }
-             
-         }
-    public boolean actualizarEspecialidade(Especialidade especialidade) {
- 
-             return true;
-         }
-    public boolean deletarEspecialidade(Especialidade especialidade) {
- 
-             return true;
+            
+    }
+  
+      
+
+  
+    public boolean actualizarEspecialidade(Especialidade especialidade) throws SQLException, ClassNotFoundException {
+        Connection conn = Conexao.getConexao();
+        String sql = "UPDATE ESPECIALIDADE SET NOME = ?, DESCRICAO=? WHERE ID_ESPECIALIDADE = ?";
+        
+        try (PreparedStatement obj = conn.prepareStatement(sql)){
+            obj.setString(1, getNome());
+                obj.setString(2, getDescricao());
+                obj.setInt(3, getCodigo());
+                obj.executeUpdate();
+                obj.close();
+                return true;
+        } catch (Exception e) {
+            System.out.println("Erro ao actualizar na BD: "+e);
+        }
+             return false;
          }
  
      }
